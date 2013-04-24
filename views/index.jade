@@ -1,0 +1,9 @@
+extends layout
+block content
+	form(action=configObject.submitLink)
+		fieldset
+			legend #{configObject.videoName}
+			button(type="submit")
+				img(src="/images/message.png", alt=configObject.videoName)
+
+	

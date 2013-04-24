@@ -1,0 +1,77 @@
+!!!
+html
+	head
+		meta(charset="utf-8")
+		title = title
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(name="description",content="Watch Your favourate Bombino videos")
+		meta(name="author",content="Bombino Videos")
+		link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel="apple-touch-icon-precomposed",sizes="144x144",href="/images/ico/apple-touch-icon-144-precomposed.png")
+		link(rel="apple-touch-icon-precomposed",sizes="114x114",href="/images/ico/apple-touch-icon-114-precomposed.png")
+		link(rel="apple-touch-icon-precomposed",sizes="72x72",href="/images/ico/apple-touch-icon-72-precomposed.png")
+		link(rel="apple-touch-icon-precomposed",href="/images/apple-touch-icon-57-precomposed.png")
+		link(rel="shortcut icon",href="/images/ico/favicon.png")
+	body
+		block head
+			div(class="navbar navbar-fixed-top")
+				div(class="navbar-inner")
+					div(class="container")
+						a(class="btn btn-navbar", data-toggle="collapse", data-target=".nav-collapse")
+							span(class="icon-bar")
+							span(class="icon-bar")
+							span(class="icon-bar")
+						a(class="brand", href="") #{configObject.title}
+						div(class="nav-collapse collapse",id="main-menu")
+							ul(class="nav",id="main-menu-left")
+								li
+									a(href="/home") Watch
+								li
+									a(href="/upload") Upload
+								li
+									a(href="/share") Share
+		
+		div(class="container")
+			div(class="row")
+				div(class="span10")
+					block content
+				div(class="span2")
+					block advertisement
+		block footer
+			div(class="footer")
+				ul(class="footer-links")
+					li .
+					li
+						a(href="/about") About
+					li .
+					li
+						a(href="/press") Press & Blogs
+					li .
+					li
+						a(href="/copyright") Copyright
+					li .
+					li
+						a(href="/creators") Creators & Partners
+					li .
+					li
+						a(href="/advertising") Advertising
+					li .
+					li
+						a(href="/developers") Developers
+					li .
+				ul(class="footer-links")
+					li .
+					li
+						a(href="/terms") Terms
+					li .
+					li
+						a(href="/privacy") Privacy	
+					li .
+					li
+						a(href="/policy") Policy & Safety
+					li .
+					li
+						a(href="/feedback") Send feedback
+					li .
+						
