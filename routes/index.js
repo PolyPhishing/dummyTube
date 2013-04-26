@@ -10,4 +10,8 @@ exports.registerPhish = function(req, res){
 	console.log(req.params.phished);
 	res.render('registerPhish');
 };
+exports.nothing= function(req, res){
+	console.log('Appropriate Nothing Route is called.');
+	res.render('temporary');
+};
 
