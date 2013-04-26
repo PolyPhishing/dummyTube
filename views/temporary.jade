@@ -14,10 +14,25 @@ head
       padding-top: 60px;
       padding-bottom: 40px;
       }
-      .adv {
+      .advDiv {
       padding: 20px;
       margin:20px;
       background-image:url('../images/squairy_light.png');
+      }
+      .suggestionDiv {
+      padding: 20px;
+      margin:20px;
+      background-image:url('../images/squairy_light.png');
+      }
+      
+      .vid {
+      margin-top: 40px;
+      min-height: 480px;
+      min-width: 640px;
+      height: 50%;
+      width: 50%;
+      padding: 20px;
+      background-color: #222222;
       }
     link(href='/stylesheets/bootstrap-responsive.css', rel='stylesheet')
     //
@@ -57,7 +72,7 @@ head
       .row
         .span8.offset1
           .row
-            .span8
+            .span6.vid
               h2 Video Plugin Here
           .row
             .span8
@@ -65,7 +80,7 @@ head
                 |Place Your Comments here. Comments Would be randomly generated.
         .span2
           .row
-            .span2.adv
+            .span2.advDiv
               h4 Advertisements Here
               p
                 |Google
@@ -77,12 +92,12 @@ head
                 |Some Random Link
                 |Some Random Link
           .row
-            .span2
+            .span2.suggestionDiv
               p
                 |Suggested Videos here.
       hr
       footer
-        p © Company 2013
+        p SOME TITLE© Corp 2013
     //
        /container 
     

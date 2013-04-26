@@ -101,7 +101,7 @@
 
 @media print {
   .visible-print {
-    display: inherit !important;
+    display: inherit !important;  
  }
   .hidden-print {
     display: none !important;
