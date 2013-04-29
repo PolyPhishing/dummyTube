@@ -27,8 +27,7 @@ head
       }
       .suggestionDiv {
       margin:20px;
-      background-image:url('../images/squairy_light.png');
-      border: 1px solid #ddd;
+      border:  2px solid rgb(207, 172, 226)
       -webkit-border-radius: 4px;
       -moz-border-radius: 4px;
       border-radius: 4px;
@@ -72,10 +71,10 @@ head
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.brand(href='#') SITE TITLE
+          a.brand(href='#') uaeTube
           .nav-collapse.collapse
             form.navbar-search.pull-center
-              input(type='text', class='search-query',placeholder='What are you looking for?')
+              input(type='text', class='search-query',placeholder='Search Videos')
             ul.nav.pull-right
               li.active
                 a(href='#') Explore
@@ -95,20 +94,24 @@ head
           .row
             .span8
               block comments
-                h2 Comments
+                h5 User Comments
                 -var mycomment = wrapper.comments
                 for comment in mycomment
                   .row.commentDiv
                     -var userlink = '/users/'+ comment.name
+                    -var image = comment.image
+                    -var name = comment.name
                     .span1
                       a(href=userlink)
-                        img(src="../images/photo.jpg",alt=#{comment.name})
+                        img(src=image, alt=name)
                     .span6
                       div
                         a(href=userlink) #{comment.name}
                       div
                         small #{comment.message}
-
+                a(href="#login") Login 
+                | to add Comments
+                
                         
         .span3.ignoreMargin
           .row
@@ -128,13 +131,13 @@ head
                 .row.recomendation
                   a(href="")
                     .span1
-                      img(src="../images/photo.jpg")
+                      img(src=suggestion.thumbnailSrc)
                     | #{suggestion.videoTitle}
 
 
       hr
       footer
-        p SOME TITLE© Corp 2013
+        p uaeTube© Corp 2013
     //
        /container 
     
