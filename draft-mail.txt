@@ -1,0 +1,9 @@
+email-TO: student@aus.edu
+email-FROM: someUser@aus.edu (by just using the header of a non-existent aus-sender)
+Subject:	[Some Student] has shared a video with you
+Body:
+	[Some Student id] has shared a video with you.
+	//Title of the video. (AUS Evacuates in Panic)
+	//Link to the page, *unique for each student so that we can keep a track of them
+	This message was sent to [studentID], because a friend recomended the address. If you don't want to receive these emails from uaeTube in the future, please unsubscribe.
+	uaeTube Inc, 10054, Burj Khalifa, Dubai.

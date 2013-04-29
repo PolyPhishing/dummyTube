@@ -19,7 +19,7 @@ exports.nothing= function(req, res){
 	 	,{name:'Ali Jericho ', message:'Chuck norris was on vacation in Abu dhabi when﻿ he was suddenly told he cant have alcohol without a license here',image:'../images/user/photo.jpg'}
 		,{name: 'alaa sohil ', message:'I almost got ran over by a truck, and the most﻿ horrible car accident ever', image:'../images/user/4546gFFGe35g.jpg'}
 		];
-         
+    wrapper.userid=req.params.from;
     wrapper.suggestions = [
 		{ videoTitle:'الصور الاولى للزلزال الذي ضرب جنوب إيران', thumbnailSrc:'../images/thumbnails/SaU_a1x1AcA.jpg'}, 
 		{ videoTitle:'زلزال إيران وهزات بالخليج دبي وابوظبي والفجيرة والسعودية والبحرين والكويت', thumbnailSrc:'../images/thumbnails/0WrcBhKLtes.jpg'}, 
