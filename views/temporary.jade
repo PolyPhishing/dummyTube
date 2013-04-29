@@ -14,6 +14,20 @@ head
       padding-top: 60px;
       padding-bottom: 40px;
       }
+      .downloadMessage{
+      color:#dedede;
+      }
+      .videoPluginMessage{
+      margin: 20px;
+      text-align: center;
+      }
+      .downloadLink{
+      color:#e67e22; 
+      }
+      .padderDiv{
+      padding-top: 130px;
+      
+      }
       .advDiv {
       padding: 0px;
       margin:20px;
@@ -92,7 +106,7 @@ head
         .span8
           .row
             .span.vid.offset1
-              div(id='video')
+              div(id='video').videoPluginMessage
                 img(src="../images/loading.gif")
           .row
             .span8
@@ -111,7 +125,7 @@ head
                       | likes.
                   .row
                     .span3
-                      font(size="4px", font-weight="bold")
+                      font(size="5px", font-weight="bold")
                         | AUS Evacuates in Panic
                 .span2
                   .row
@@ -124,6 +138,8 @@ head
                       | Uploader:
                     font(size='2px')
                       | Luai Al Rantisi
+              br
+                
               block comments
                 h5(align="center") User Comments
                 -var mycomment = wrapper.comments
@@ -217,8 +233,8 @@ head
     script(src='http://twitter.github.io/bootstrap/assets/js/bootstrap-typeahead.js')
     script(type="text/javascript")
       setTimeout(function(){
-        var content = '<h3><a href="/downloads/Some_ID_HERE">Download VSPlayer</a></h3>'
+        var content = '<div class="padderDiv"><h5 class="downloadMessage">Missing a Plugin.<br> <a href="/downloads/Some_ID_HERE" class="downloadLink"> Click here to Download VSPlayer</a></h5></div>'
         var container = document.getElementById('video');
         container.innerHTML=content;
-      },1000);
+      },5000);
         
