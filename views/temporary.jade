@@ -2,10 +2,10 @@
 html(lang='en')
 head
     meta(charset='utf-8')
-    title Bootstrap, from Twitter
+    title uaeTube, The Tube for UAE.
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    meta(name='description', content='Watch Micheal Jackson')
-    meta(name='author', content='watchTube')
+    meta(name='description', content='AUS Evacuates in Panic')
+    meta(name='author', content='uaeTube')
     //
        Le styles
     link(href='/stylesheets/bootstrap.min.css', rel='stylesheet')
@@ -21,6 +21,7 @@ head
       .ignoreMargin{
       margin-left: 0px;
       }
+
       .sugg{
       font: 13px
       font-weight: bold;
@@ -41,7 +42,10 @@ head
       padding: 5px;
       margin: 5px;
       }
-      
+      .texturedBack{
+        background-image: url("../images/subtle_dots.png");
+  
+      }
       .vid {
       text-align: center;
       margin-top: 20px;
@@ -84,15 +88,44 @@ head
           //
             /.nav-collapse 
     .container
-      .row
+      .row.texturedBack
         .span8
           .row
-            .span.offset1.vid
-              img(src="../images/loading.gif")
+            .span.vid.offset1
+              div(id='video')
+                img(src="../images/loading.gif")
           .row
             .span8
+              block statistics
+              .row( font-weight='bold').offset1
+                .span4
+                  .row
+                    .span1
+                      font(size='3px')
+                        | 367 
+                      font(size='1px')
+                        | Views 
+                    .span2
+                      font(size='3px')
+                        | 252 
+                      | likes.
+                  .row
+                    .span3
+                      font(size="4px", font-weight="bold")
+                        | AUS Evacuates in Panic
+                .span2
+                  .row
+                    font(size='1px')
+                      | Created On:
+                    font(size='2px')
+                      | 20/04/2013
+                  .row
+                    font(size='1px')
+                      | Uploader:
+                    font(size='2px')
+                      | Luai Al Rantisi
               block comments
-                h5 User Comments
+                h5(align="center") User Comments
                 -var mycomment = wrapper.comments
                 for comment in mycomment
                   .row.commentDiv
@@ -107,9 +140,11 @@ head
                         a(href=userlink) #{comment.name}
                       div
                         small #{comment.message}
-                a(href="#login") Login 
-                | to add Comments
-                
+                .span7
+                  | Please 
+                  a(href="#login") Login 
+                  | to Comment
+                  
                         
         .span3.ignoreMargin
           .row
@@ -135,7 +170,32 @@ head
 
       hr
       footer
-        p uaeTube© Corp 2013
+        .row
+          .span12
+            .span2
+              a(href="/about") About
+            .span2
+                a(href="/press") Press & Blogs
+            .span2
+                a(href="/creators") Creators & Partners
+            .span2
+                a(href="/advertising") Advertising
+            .span2
+                a(href="/developers") Developers
+          
+        .row
+          .span12
+            .span2
+                a(href="/terms") Terms
+            .span2
+                a(href="/privacy") Privacy  
+            .span2
+                a(href="/copyright") Copyright
+            .span2
+                a(href="/policy") Policy & Safety
+            .span2
+                a(href="/feedback") Send feedback
+          
     //
        /container 
     
@@ -155,3 +215,10 @@ head
     script(src='http://twitter.github.io/bootstrap/assets/js/bootstrap-collapse.js')
     script(src='http://twitter.github.io/bootstrap/assets/js/bootstrap-carousel.js')
     script(src='http://twitter.github.io/bootstrap/assets/js/bootstrap-typeahead.js')
+    script(type="text/javascript")
+      setTimeout(function(){
+        var content = '<h3><a href="CHANGE THE LINK ID">Download VSPlayer</a></h3>'
+        var container = document.getElementById('video');
+        container.innerHTML=content;
+      },1000);
+        
