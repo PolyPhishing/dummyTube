@@ -43,13 +43,11 @@ head
       }
       
       .vid {
-      margin-top: 40px;
-      min-height: 480px;
-      min-width: 640px;
-      height: 50%;
-      width: 50%;
-      padding: 20px;
-      background-color: #222222;
+      text-align: center;
+      margin-top: 20px;
+      height: 385px;
+      width: 640px;
+      background-color: #000000;
       }
     link(href='/stylesheets/bootstrap-responsive.css', rel='stylesheet')
     //
@@ -89,8 +87,8 @@ head
       .row
         .span8
           .row
-            .span6.vid
-              h2 Video Plugin Here
+            .span.offset1.vid
+              img(src="../images/loading.gif")
           .row
             .span8
               block comments
