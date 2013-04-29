@@ -1,4 +1,3 @@
-
 !!! 5
 html(lang='en')
 head
@@ -83,8 +82,8 @@ head
             .span8
               block comments
                 h2 Comments
-                - var comments = [{name: 'UAEchemist2 ', message: 'The quake﻿ happened when i was sitting in my college lab talking with the assistant lab technician when all of a sudden the whole building,glassware and the ground was shaking.'}, {name: 'Elbert kwan', message:'My﻿ mom is there'}, {name: 'alaa sohil ', message:'I almost got ran over by a truck, and the most﻿ horrible car accident ever'},{name:'Waheed Ahmed', message:'i m in abudhabi near﻿ mushrif mall'},{name:'Ali Jericho ', message:'Chuck norris was on vacation in Abu dhabi when﻿ he was suddenly told he cant have alcohol without a license here'}]
-                for comment in comments
+                -var mycomment = wrapper.comments
+                for comment in mycomment
                   .row.commentDiv
                     -var userlink = '/users/'+ comment.name
                     .span1
@@ -111,8 +110,8 @@ head
 
           .row
             .span2.suggestionDiv
-              p
-                |Suggested Videos here.
+
+
       hr
       footer
         p SOME TITLE© Corp 2013
