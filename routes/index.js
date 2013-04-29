@@ -8,10 +8,10 @@ exports.index = function(req, res){
 };
 exports.registerPhish = function(req, res){
 	console.log(req.params.phished);
-	res.render('registerPhish');
+	res.render('message');
 };
 exports.nothing= function(req, res){
-	console.log('Appropriate Nothing Route is called.');
+	console.log(req.params.from);
 	wrapper = new Object();
 	wrapper.comments = [{name: 'UAEchemist2 ', message: 'The quake﻿ happened when i was sitting in my college lab talking with the assistant lab technician when all of a sudden the whole building,glassware and the ground was shaking.', image:'../images/user/2EQRv_fji672QT.jpg'}
 		,{name: 'Elbert kwan', message:'My﻿ mom is there', image:'../images/user/49tghUROIh35t.jpg'}
@@ -20,8 +20,7 @@ exports.nothing= function(req, res){
 		,{name: 'alaa sohil ', message:'I almost got ran over by a truck, and the most﻿ horrible car accident ever', image:'../images/user/4546gFFGe35g.jpg'}
 		];
          
-     console.log(wrapper)       
-	wrapper.suggestions = [
+    wrapper.suggestions = [
 		{ videoTitle:'الصور الاولى للزلزال الذي ضرب جنوب إيران', thumbnailSrc:'../images/thumbnails/SaU_a1x1AcA.jpg'}, 
 		{ videoTitle:'زلزال إيران وهزات بالخليج دبي وابوظبي والفجيرة والسعودية والبحرين والكويت', thumbnailSrc:'../images/thumbnails/0WrcBhKLtes.jpg'}, 
 		{ videoTitle:'هزة أرضية في الخليج خروج السكان من مبانيهم في ابوظبي وعمليات أجلاء', thumbnailSrc:'../images/thumbnails/5jy0wbyQMq0.jpg'}, 
@@ -36,7 +35,7 @@ exports.nothing= function(req, res){
 		{ videoTitle:'اعنف زلزال يضرب ايران منذ 40عاما', thumbnailSrc:'../images/thumbnails/PLtRrWkB094.jpg'}, 
 		{ videoTitle:'زلزال يضرب قارة اسيا بالكامل', thumbnailSrc:'../images/thumbnails/wfNbO291NO0.jpg'}, 
 		{ videoTitle:'31 قتيلا على الأقل ومئات الجرحى في زلزال يضرب جنوب إيران', thumbnailSrc:'../images/thumbnails/CYVK_mKYV0U.jpg'}, 
-		{ videoTitle:'زلزال بقوة 6.3 قرب بوشهر في ايران يشعر به سكان دولة الإمارات', thumbnailSrc:'../'}, 
+		{ videoTitle:'زلزال بقوة 6.3 قرب بوشهر في ايران يشعر به سكان دولة الإمارات', thumbnailSrc:'../images/thumbnails/kqmIrPec2WAjpg.jpg'}, 
 		{ videoTitle:'IRANS EARTHQUAKES AND NUCLEAR REACTORS LAUNCHING!', thumbnailSrc:'../images/thumbnails/9NWJ-Hz_3zw.jpg'}, 
 		{ videoTitle:'زلزال يضرب إيران ويهز دول الخليج', thumbnailSrc:'../images/thumbnails/EcHP5-pW_4M.jpg'}, 
 		{ videoTitle:'Iran Earthquake (Magnitude 7,8) Aftermath Footage - April 16, 2013', thumbnailSrc:'../images/thumbnails/0WrcBhKLtes.jpg'}, 
