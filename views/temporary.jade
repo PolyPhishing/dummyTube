@@ -18,12 +18,26 @@ head
       padding: 0px;
       margin:20px;
       }
+      .ignoreMargin{
+      margin-left: 0px;
+      }
+      .sugg{
+      font: 13px
+      font-weight: bold;
+      }
       .suggestionDiv {
-      padding: 20px;
       margin:20px;
       background-image:url('../images/squairy_light.png');
+      border: 1px solid #ddd;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
       }
-
+      .recomendation {
+      padding: 5px;
+      margin: 5px;
+      }
+      
       .commentDiv {
       padding: 5px;
       margin: 5px;
@@ -74,7 +88,7 @@ head
             /.nav-collapse 
     .container
       .row
-        .span8.offset1
+        .span8
           .row
             .span6.vid
               h2 Video Plugin Here
@@ -96,9 +110,9 @@ head
                         small #{comment.message}
 
                         
-        .span2
+        .span3.ignoreMargin
           .row
-            .span2.advDiv
+            .span3.ignoreMargin.advDiv
               a(id="aw0", target="_blank", href="http://chittika.g.doubleclick.net/aclk?sa=L&amp;ai=CqXggjON9UaOdJYnakwt97-CFUMEPeGPzClIV9pXLE_pAvQNkD7U7SvI3oAYZgAeroq4k&amp;num=1&amp;sig=AOD64_0aCwks&amp;client=ca-pub-62198&amp;adurl=http://bricks.coupons.com/Bstart.asp%3Fo%3D108708%26c%3DSD%ElP")
                 img(src="../images/imgadCICgIDQ9IOPgQEQrAIYgEyCIS182MUA6T3.jpg", border="0",width="300",height="239")
               table(width='300', height='11', cellspacing='0', cellpadding='0', border='0', bgcolor='#d3d3d3')
@@ -109,7 +123,13 @@ head
                         a(target='_blank', href='https://www.chittika.com/adsense/support/bin/request.py?contact_type=afv_violation') Ads by Chittika
 
           .row
-            .span2.suggestionDiv
+            .span3.ignoreMargin.suggestionDiv
+              for suggestion in wrapper.suggestions
+                .row.recomendation
+                  a(href="")
+                    .span1
+                      img(src="../images/photo.jpg")
+                    | #{suggestion.videoTitle}
 
 
       hr

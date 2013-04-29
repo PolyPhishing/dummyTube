@@ -20,7 +20,7 @@ exports.nothing= function(req, res){
 		{ videoTitle:'هزة أرضية في الخليج خروج السكان من مبانيهم في ابوظبي وعمليات أجلاء', thumbnailSrc:'https://i3.ytimg.com/vi/Jlu4SPyjDfY/default.jpg'}, 
 		{ videoTitle:'لحظة وقوع الزلزال', thumbnailSrc:'https://i1.ytimg.com/vi/0WrcBhKLtes/default.jpg'}, 
 		{ videoTitle:'إخلاء مبان في الإمارات بعد الزلزال', thumbnailSrc:'https://i1.ytimg.com/vi/xBGru3yI-Zg/default.jpg'}, 
-		{ videoTitle:'JAPAN - The Earthquake - 15 Minutes Live-Cam', thumbnailSrc:'https://i3.ytimg.com/vi/jBdvvXyS-r4/default.jpg'}, 
+		{ videoTitle:'JAPAN The Earthquake 15 Minutes Live-Cam', thumbnailSrc:'https://i3.ytimg.com/vi/jBdvvXyS-r4/default.jpg'}, 
 		{ videoTitle:'زلزال بقوة 8 ريختر يضرب إيران وسقوط أكثر من 40 قتيلاً - YouTube', thumbnailSrc:'https://i4.ytimg.com/vi/37Y6Ew3bCnQ/default.jpg'}, 
 		{ videoTitle:'زلزال يضرب ايران وارتداده يهز الامارات والخليج 16 / 4 / 2013', thumbnailSrc:'https://i3.ytimg.com/vi/rQ2-uMLZC8U/default.jpg'}, 
 		{ videoTitle:'زلزال اليابان | صور مرعبة', thumbnailSrc:'https://i3.ytimg.com/vi/B6_TEbzcgmI/default.jpg'}, 
