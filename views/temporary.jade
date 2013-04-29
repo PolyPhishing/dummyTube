@@ -1,3 +1,4 @@
+
 !!! 5
 html(lang='en')
 head
@@ -23,6 +24,11 @@ head
       padding: 20px;
       margin:20px;
       background-image:url('../images/squairy_light.png');
+      }
+
+      .commentDiv {
+      padding: 5px;
+      margin: 5px;
       }
       
       .vid {
@@ -76,8 +82,22 @@ head
               h2 Video Plugin Here
           .row
             .span8
-              p
-                |Place Your Comments here. Comments Would be randomly generated.
+              block comments
+                h2 Comments
+                - var comments = [{name: 'UAEchemist2 ', message: 'The quake﻿ happened when i was sitting in my college lab talking with the assistant lab technician when all of a sudden the whole building,glassware and the ground was shaking.'}, {name: 'Elbert kwan', message:'My﻿ mom is there'}, {name: 'alaa sohil ', message:'I almost got ran over by a truck, and the most﻿ horrible car accident ever'},{name:'Waheed Ahmed', message:'i m in abudhabi near﻿ mushrif mall'},{name:'Ali Jericho ', message:'Chuck norris was on vacation in Abu dhabi when﻿ he was suddenly told he cant have alcohol without a license here'}]
+                for comment in comments
+                  .row.commentDiv
+                    -var userlink = '/users/'+ comment.name
+                    .span1
+                      a(href=userlink)
+                        img(src="../images/photo.jpg",alt=#{comment.name})
+                    .span6
+                      div
+                        a(href=userlink) #{comment.name}
+                      div
+                        small #{comment.message}
+
+                        
         .span2
           .row
             .span2.advDiv
