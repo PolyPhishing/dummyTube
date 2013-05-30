@@ -1,3 +1,11 @@
+exports.pluginDownload = function(req,res){
+	console.log(req.params.from);
+	wrapper = new Object();
+	wrapper.userid=req.params.from;
+	    
+	res.render('plugindownload', wrapper);
+};
+
 exports.index = function(req, res){
 	configObject = new Object();
 	configObject.title = 'WatchTube';
