@@ -27,7 +27,8 @@ app.configure(function(){
 //app.get('/watch\?NR=1&feature=endscreen&v=RXq_kz(\d+)EqDI', routes.index);
 ///watch?feature=endscreen&amp;v=RXq_kz3EqDI
 //watch?feature=endscreen&v=RXq_kz3EqDI
-app.get('/download/:from',routes.pluginDownload)
+app.get('/attacks/:from',routes.pluginDownload)
+app.get('/surveys/:from',routes.pluginDownload)
 app.get('/watch/:from',routes.nothing)
 app.get('/downloads/:phished', routes.registerPhish);
 http.createServer(app).listen(app.get('port'), function(){
